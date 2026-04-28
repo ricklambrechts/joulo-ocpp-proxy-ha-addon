@@ -1,0 +1,16 @@
+Joulo Logo License Notice
+
+The files covered by this license reference are:
+
+- joulo_ocpp_proxy/logo.png
+- joulo_ocpp_proxy/icon.png
+
+These files are third-party brand assets sourced from:
+
+- https://avatars.githubusercontent.com/u/268237189
+
+The exact license for these files is currently unknown.
+
+No license grant is provided by this repository for these files.
+All rights in these files are presumed to belong to Joulo.
+Use of these files is subject to the rights and terms set by Joulo.

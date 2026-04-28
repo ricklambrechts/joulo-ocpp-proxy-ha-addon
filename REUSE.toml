@@ -1,0 +1,14 @@
+version = 1
+
+[[annotations]]
+path = ["*"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Rick Lambrechts"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["joulo_ocpp_proxy/logo.png", "joulo_ocpp_proxy/icon.png"]
+precedence = "override"
+SPDX-FileCopyrightText = "Joulo B.V."
+SPDX-License-Identifier = "LicenseRef-Joulo-Logo"
+SPDX-Source = "https://avatars.githubusercontent.com/u/268237189"

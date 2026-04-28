@@ -1,0 +1,12 @@
+configuration:
+  primary_csms_url:
+    name: Primary CSMS URL
+    description: WebSocket URL of the primary CSMS backend.
+  secondary_csms_urls:
+    name: Secondary CSMS URLs
+    description: Optional list of WebSocket URLs for mirrored backends.
+  log_level:
+    name: Log level
+    description: Verbosity of proxy logs.
+network:
+  9000/TCP: OCPP WebSocket port
