@@ -7,6 +7,8 @@ This add-on is not affiliated with, endorsed by, or supported by Joulo. It
 only provides Home Assistant add-on configuration for the upstream
 `joulo-ocpp-proxy` image.
 
+If you want to thank me, you can use this referral link: [joulo.nl/signup?ref=7QP7GK](https://joulo.nl/signup?ref=7QP7GK).
+
 The proxy accepts charger OCPP WebSocket connections, forwards traffic to one
 primary CSMS, and optionally mirrors charger-to-CSMS messages to one or more
 secondary CSMS backends.

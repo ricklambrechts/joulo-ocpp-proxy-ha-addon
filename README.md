@@ -7,6 +7,8 @@ This app is not affiliated with, endorsed by, or supported by Joulo. It only
 provides Home Assistant app configuration to run the upstream
 `joulo-ocpp-proxy` container image.
 
+If you want to thank me, you can use this referral link: [joulo.nl/signup?ref=7QP7GK](https://joulo.nl/signup?ref=7QP7GK).
+
 ## Add this app repository to Home Assistant
 
 1. Open Home Assistant.
