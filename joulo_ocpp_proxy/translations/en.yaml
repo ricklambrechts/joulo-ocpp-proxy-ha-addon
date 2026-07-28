@@ -2,11 +2,26 @@ configuration:
   primary_csms_url:
     name: Primary CSMS URL
     description: WebSocket URL of the primary CSMS backend.
+  primary_csms_append_charge_point_id:
+    name: Append charge point ID to primary CSMS URL
+    description: >-
+      Append the charger's ID to the primary backend URL. Disable this when the
+      primary backend URL already identifies the charger.
   secondary_csms_urls:
     name: Secondary CSMS URLs
     description: Optional list of WebSocket URLs for mirrored backends.
+  secondary_csms_append_charge_point_id:
+    name: Append charge point ID to secondary CSMS URLs
+    description: >-
+      Append the charger's ID to each mirrored backend URL. Disable this when
+      the backend URLs already identify the charger.
   log_level:
     name: Log level
     description: Verbosity of proxy logs.
+  log_debug_message_max_length:
+    name: Debug message maximum length
+    description: >-
+      Maximum characters in debug payload summaries. Leave blank to disable
+      truncation.
 network:
   9000/TCP: OCPP WebSocket port

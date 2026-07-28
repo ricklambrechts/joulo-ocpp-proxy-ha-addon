@@ -32,8 +32,12 @@ secondary CSMS backends.
 Set the following app options before starting:
 
 - `primary_csms_url` (required), for example `wss://primary.example.com/ocpp`
+- `primary_csms_append_charge_point_id` (optional, default `true`)
 - `secondary_csms_urls` (optional list)
+- `secondary_csms_append_charge_point_id` (optional, default `true`)
 - `log_level` (optional, default `info`)
+- `log_debug_message_max_length` (optional, default `120`; leave blank to
+  disable truncation)
 
 The app always listens on container port `9000`. You can change the
 host/public port in Home Assistant port mapping settings.

@@ -24,6 +24,14 @@ Examples:
 - `wss://primary.example.com/ocpp`
 - `ws://192.168.1.10:8080/ocpp`
 
+### `primary_csms_append_charge_point_id` (optional)
+
+Append the charge point ID from the incoming charger URL to the primary CSMS
+URL. Default: `true`.
+
+Set this to `false` when the primary CSMS URL already identifies the charger
+or expects no charge point ID path suffix.
+
 ### `secondary_csms_urls` (optional)
 
 List of additional backend URLs that receive mirrored charger messages.
@@ -36,6 +44,14 @@ secondary_csms_urls:
   - wss://audit.example.com/ocpp
 ```
 
+### `secondary_csms_append_charge_point_id` (optional)
+
+Append the charge point ID from the incoming charger URL to every secondary
+CSMS URL. Default: `true`.
+
+Set this to `false` when the secondary CSMS URLs already identify the charger
+or expect no charge point ID path suffix.
+
 ### `log_level` (optional)
 
 Logging level. One of:
@@ -46,6 +62,11 @@ Logging level. One of:
 - `error`
 
 Default: `info`
+
+### `log_debug_message_max_length` (optional)
+
+Maximum number of characters in debug payload summaries. Default: `120`.
+Enter a positive integer, or leave it empty to disable truncation.
 
 The app always listens on container port `9000`.
 If needed, change the host-side port mapping in Home Assistant.
@@ -61,7 +82,8 @@ Example:
 ws://homeassistant.local:9000/CHARGER-001
 ```
 
-The proxy appends the charge point ID to each upstream CSMS URL.
+By default, the proxy appends the charge point ID to each upstream CSMS URL.
+You can configure this independently for the primary and secondary CSMS URLs.
 
 ## Notes
 
