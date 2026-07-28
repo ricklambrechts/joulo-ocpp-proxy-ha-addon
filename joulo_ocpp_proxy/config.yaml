@@ -1,7 +1,9 @@
 name: "Joulo OCPP Proxy"
-version: "main"
+version: "1.1.0"
 slug: "joulo_ocpp_proxy"
-description: "Home Assistant add-on for joulo-ocpp-proxy (unofficial, not affiliated with Joulo)."
+description: >-
+  Home Assistant App for joulo-ocpp-proxy (unofficial, not affiliated with
+  Joulo).
 url: "https://github.com/joulo-nl/joulo-ocpp-proxy"
 arch:
   - aarch64
@@ -17,10 +19,16 @@ ports_description:
 watchdog: "tcp://[HOST]:[PORT:9000]"
 options:
   primary_csms_url: ""
+  primary_csms_append_charge_point_id: true
   secondary_csms_urls: []
+  secondary_csms_append_charge_point_id: true
   log_level: info
+  log_debug_message_max_length: "120"
 schema:
   primary_csms_url: "match(^wss?://.+)"
+  primary_csms_append_charge_point_id: bool
   secondary_csms_urls:
     - "match(^wss?://.+)"
+  secondary_csms_append_charge_point_id: bool
   log_level: "list(debug|info|warn|error)"
+  log_debug_message_max_length: "match(^$|^[1-9][0-9]*$)"
